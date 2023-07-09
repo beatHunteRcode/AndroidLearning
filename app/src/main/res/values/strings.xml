@@ -2,8 +2,8 @@
     <string name="app_name">AndroidLearning</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="happy_birthday_text">Happy Birthday Lupa!</string>
-    <string name="from_text">From Pupa</string>
+    <string name="birthday_card_message_text">Happy Birthday Lupa!</string>
+    <string name="birthday_card_from_text">From Pupa</string>
 
     <!-- For Basic Layouts in Compose -->
     <string name="favorite_collections">Favorite Collections</string>
@@ -31,5 +31,7 @@
     <string name="business_card_contacts_email_text">beathunter@gmail.com</string>
     <string name="business_card_person_name_text">Nikita</string>
     <string name="business_card_person_status_text">Android Enjoyer</string>
+    <string name="push_me_text">PUSH ME</string>
+    <string name="repeat_text">Repeat</string>
 
 </resources>

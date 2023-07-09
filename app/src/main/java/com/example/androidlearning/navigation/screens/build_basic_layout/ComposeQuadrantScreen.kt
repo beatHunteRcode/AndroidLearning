@@ -14,10 +14,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.androidlearning.C
 import com.example.androidlearning.R
 import com.example.androidlearning.navigation.screens.Utils
 
@@ -33,14 +36,18 @@ fun ComposeQuadrantScreen() {
                 text = Utils.QUADRANT_TEXT_COMPOSABLE_TEXT,
                 padding = PaddingValues(16.dp),
                 backgroundColor = colorResource(id = R.color.lavender),
-                Modifier.weight(50f)
+                columnModifier = Modifier.weight(50f),
+                titleModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_text_composable_title_text },
+                textModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_text_composable_text }
             )
             Quadrant(
                 header = Utils.QUADRANT_IMAGE_COMPOSABLE_TITLE,
                 text = Utils.QUADRANT_IMAGE_COMPOSABLE_TEXT,
                 padding = PaddingValues(16.dp),
                 backgroundColor = colorResource(id = R.color.perfume),
-                Modifier.weight(50f)
+                columnModifier = Modifier.weight(50f),
+                titleModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_image_composable_title_text },
+                textModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_image_composable_text }
             )
         }
         Row(Modifier.weight(50f)) {
@@ -49,25 +56,36 @@ fun ComposeQuadrantScreen() {
                 text = Utils.QUADRANT_ROW_COMPOSABLE_TEXT,
                 padding = PaddingValues(16.dp),
                 backgroundColor = colorResource(id = R.color.biloba_flower),
-                Modifier.weight(50f)
+                columnModifier = Modifier.weight(50f),
+                titleModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_row_composable_title_text },
+                textModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_row_composable_text }
             )
             Quadrant(
                 header = Utils.QUADRANT_COLUMN_COMPOSABLE_TITLE,
                 text = Utils.QUADRANT_COLUMN_COMPOSABLE_TEXT,
                 padding = PaddingValues(16.dp),
                 backgroundColor = colorResource(id = R.color.selago),
-                Modifier.weight(50f)
+                columnModifier = Modifier.weight(50f),
+                titleModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_column_composable_title_text },
+                textModifier = Modifier.semantics { testTag = C.Tag.compose_quadrant_column_composable_text }
             )
         }
     }
 }
 
 @Composable
-fun Quadrant(header: String, text: String, padding: PaddingValues, backgroundColor: Color, modifier: Modifier = Modifier) {
+fun Quadrant(
+    header: String,
+    text: String,
+    padding: PaddingValues,
+    backgroundColor: Color,
+    columnModifier: Modifier = Modifier,
+    titleModifier : Modifier = Modifier,
+    textModifier: Modifier = Modifier) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
-        modifier = modifier
+        modifier = columnModifier
             .fillMaxHeight()
             .fillMaxWidth()
             .background(backgroundColor)
@@ -77,13 +95,13 @@ fun Quadrant(header: String, text: String, padding: PaddingValues, backgroundCol
             text = header,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Justify,
-            modifier = Modifier.padding(padding),
+            modifier = titleModifier.padding(padding),
         )
         Text (
             text = text,
             textAlign = TextAlign.Justify,
             fontSize = Utils.DEFAULT_FONT_SIZE,
-            modifier = Modifier.padding(padding)
+            modifier = textModifier.padding(padding)
         )
     }
 }

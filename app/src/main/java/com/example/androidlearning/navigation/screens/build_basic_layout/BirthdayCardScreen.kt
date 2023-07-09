@@ -30,8 +30,8 @@ import com.example.androidlearning.R
 @Composable
 fun BirthdayCardScreen() {
     BirthdayCardImage(
-        message = stringResource(R.string.happy_birthday_text),
-        from = stringResource(R.string.from_text),
+        message = stringResource(R.string.birthday_card_message_text),
+        from = stringResource(R.string.birthday_card_from_text),
         modifier = Modifier.semantics { testTag = C.Tag.birthday_card_screen }
     )
 }

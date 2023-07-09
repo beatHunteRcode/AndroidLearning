@@ -34,5 +34,30 @@ object C {
         const val birthday_card_bg_image = "birthday_card_bg_image"
         const val birthday_card_message_text = "birthday_card_message_text"
         const val birthday_card_from_text = "birthday_card_from_text"
+
+        const val compose_article_screen = "compose_article_screen"
+        const val compose_article_image = "compose_article_image"
+        const val compose_article_topic = "compose_article_topic"
+        const val compose_article_first_paragraph = "compose_article_first_paragraph"
+        const val compose_article_second_paragraph = "compose_article_second_paragraph"
+
+        const val task_manager_screen = "task_manager_screen"
+        const val task_manager_image = "task_manager_image"
+        const val task_manager_first_text = "task_manager_first_text"
+        const val task_manager_second_text = "task_manager_second_text"
+        const val task_manager_first_button = "task_manager_first_button"
+        const val task_manager_second_button = "task_manager_second_button"
+        const val task_manager_third_button = "task_manager_third_button"
+        const val task_manager_fourth_button = "task_manager_fourth_button"
+
+        const val compose_quadrant_screen = "compose_quadrant_screen"
+        const val compose_quadrant_text_composable_title_text = "compose_quadrant_text_composable_title_text"
+        const val compose_quadrant_text_composable_text = "compose_quadrant_text_composable_text"
+        const val compose_quadrant_image_composable_title_text = "compose_quadrant_image_composable_title_text"
+        const val compose_quadrant_image_composable_text = "compose_quadrant_image_composable_text"
+        const val compose_quadrant_row_composable_title_text = "compose_quadrant_row_composable_title_text"
+        const val compose_quadrant_row_composable_text = "compose_quadrant_row_composable_text"
+        const val compose_quadrant_column_composable_title_text = "compose_quadrant_column_composable_title_text"
+        const val compose_quadrant_column_composable_text = "compose_quadrant_column_composable_text"
     }
 }
