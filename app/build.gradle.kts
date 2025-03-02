@@ -6,6 +6,20 @@ plugins {
         alias(plugins.jetbrains.kotlin.android)
         alias(plugins.kotlin.kapt)
         alias(plugins.compose.compiler)
+
+        //Scabbard (Dagger2 Graph visualizer)
+        alias(plugins.scabbard)
+    }
+}
+
+allprojects {
+    configurations.all {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "com.github.kittinunf.result" && requested.name == "result" && requested.version == "3.0.0") {
+                useVersion("3.0.1")
+                because("Transitive dependency of Scabbard, currently not available on mavenCentral()")
+            }
+        }
     }
 }
 
@@ -50,6 +64,11 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+}
+
+scabbard {
+    enabled = true
+    outputFormat = "svg"
 }
 
 dependencies {
