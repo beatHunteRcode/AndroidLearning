@@ -7,5 +7,6 @@ plugins {
         alias(plugins.android.library) apply false
         alias(plugins.jetbrains.kotlin.android) apply false
         alias(plugins.compose.compiler) apply false
+        alias(plugins.kotlin.serialization) apply false
     }
 }

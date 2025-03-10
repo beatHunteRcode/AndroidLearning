@@ -9,6 +9,8 @@ plugins {
 
         //Scabbard (Dagger2 Graph visualizer)
         alias(plugins.scabbard)
+
+        alias(plugins.kotlin.serialization)
     }
 }
 
@@ -29,7 +31,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.androidlearning"
-        minSdk = 24
+        minSdk = 31
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -84,6 +86,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -107,4 +110,7 @@ dependencies {
     androidTestImplementation(libs.kaspresso.allure.support)
     // Jetpack Compose support
     androidTestImplementation(libs.kaspresso.compose.support)
+
+    //json serialization
+    implementation(libs.kotlinx.serialization.json)
 }
