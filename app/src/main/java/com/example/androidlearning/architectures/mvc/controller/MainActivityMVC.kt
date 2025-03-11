@@ -13,6 +13,9 @@ import com.example.androidlearning.architectures.mvc.model.LootTableModel
 import kotlinx.serialization.json.Json
 
 /**
+ * Reference: [Android Presentation Patterns: MVC](https://dev.to/asvid/android-presentation-patterns-mvc-2o9)
+ *
+ *
  * Before run App, change activity in AndroidManifest to MainActivityMVC
  *
  * - Model: Represented by [LootTableModel], handling data and logic.
