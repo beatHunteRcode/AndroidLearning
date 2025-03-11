@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/system_accent1_100"
+    android:orientation="vertical"
     tools:context=".architectures.mvc.controller.MainActivityMVC">
 
-    <Button
-        android:id="@+id/but_rollOnTable"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/mvc_tv"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Roll For Loot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:minHeight="200dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp"
+        android:text="MVC"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/mvc_but_rollOnTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Roll For Loot" />
 
     <TextView
-        android:id="@+id/tv_output"
-        android:layout_width="0dp"
+        android:id="@+id/mvc_tv_output"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -31,9 +43,6 @@
         android:paddingHorizontal="16dp"
         android:paddingVertical="16dp"
         android:text="Result will appear here."
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/but_rollOnTable" />
+        android:textAlignment="center" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

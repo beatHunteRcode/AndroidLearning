@@ -16,7 +16,7 @@ import kotlinx.serialization.json.Json
  * Reference: [Android Presentation Patterns: MVC](https://dev.to/asvid/android-presentation-patterns-mvc-2o9)
  *
  *
- * Before run App, change activity in AndroidManifest to MainActivityMVC
+ * Before run App, change activity in AndroidManifest to [MainActivityMVC]
  *
  * - Model: Represented by [LootTableModel], handling data and logic.
  * - View: The UI elements in res/layout/mvc_screen.xml.
@@ -33,8 +33,8 @@ class MainActivityMVC : Activity() {
 
         lootTableModel = loadLootTable()
 
-        val rollButton = findViewById<Button>(R.id.but_rollOnTable)
-        val outputTextView = findViewById<TextView>(R.id.tv_output)
+        val rollButton = findViewById<Button>(R.id.mvc_but_rollOnTable)
+        val outputTextView = findViewById<TextView>(R.id.mvc_tv_output)
 
         rollButton.setOnClickListener {
             val selectedItem = lootTableModel.getRandomItem()
