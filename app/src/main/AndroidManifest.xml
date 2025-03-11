@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AndroidLearning"
         tools:targetApi="31">
         <activity
-            android:name=".architectures.mvc.controller.MainActivityMVC"
+            android:name=".architectures.mvp.view.MainActivityMVP"
             android:exported="true"
             android:launchMode="singleTop"
             android:label="@string/app_name"
