@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AndroidLearning"
         tools:targetApi="31">
         <activity
-            android:name=".architectures.mvvm.MainActivityMVVM"
+            android:name=".architectures.mvi.MainActivityMVI"
             android:exported="true"
             android:launchMode="singleTop"
             android:label="@string/app_name"
