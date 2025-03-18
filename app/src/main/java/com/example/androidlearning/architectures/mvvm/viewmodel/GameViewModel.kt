@@ -15,20 +15,16 @@ class GameViewModel (
 
     fun getState() = stateFlow.asStateFlow()
 
-    fun handleScreenEvents(event: GameEvents) {
-        when (event) {
-            is GameEvents.CardClicked -> {
-                val updatedGames = getState().value.games.toMutableList()
-                updatedGames.removeAt(event.index)
+    fun cardClicked(cardIndex: Int) {
+        val updatedGames = getState().value.games.toMutableList()
+        updatedGames.removeAt(cardIndex)
 
-                viewModelScope.launch {
-                    stateFlow.emit(
-                        getState().value.copy(
-                            games = updatedGames
-                        )
-                    )
-                }
-            }
+        viewModelScope.launch {
+            stateFlow.emit(
+                getState().value.copy(
+                    games = updatedGames
+                )
+            )
         }
     }
 
