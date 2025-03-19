@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens.build_basic_layout
+package com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,9 +20,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.androidlearning.C
+import com.example.androidlearning.google_codelabs.C
 import com.example.androidlearning.R
-import com.example.androidlearning.navigation.screens.Utils
+import com.example.androidlearning.google_codelabs.navigation.screens.Utils
 
 @Preview(
     showBackground = true

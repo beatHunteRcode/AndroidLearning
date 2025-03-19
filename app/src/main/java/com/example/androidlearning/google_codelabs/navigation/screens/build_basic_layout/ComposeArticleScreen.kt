@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens.build_basic_layout
+package com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -15,9 +15,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.androidlearning.C
+import com.example.androidlearning.google_codelabs.C
 import com.example.androidlearning.R
-import com.example.androidlearning.navigation.screens.Utils
+import com.example.androidlearning.google_codelabs.navigation.screens.Utils
 
 @Preview (
     showBackground = true

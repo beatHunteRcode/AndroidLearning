@@ -1,4 +1,4 @@
-package com.example.androidlearning.ui.theme
+package com.example.androidlearning.google_codelabs.theme
 
 import androidx.compose.ui.graphics.Color
 

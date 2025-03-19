@@ -1,4 +1,4 @@
-package com.example.androidlearning
+package com.example.androidlearning.google_codelabs
 
 import androidx.compose.runtime.toMutableStateList
 import androidx.lifecycle.ViewModel

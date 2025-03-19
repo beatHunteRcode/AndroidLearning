@@ -1,4 +1,4 @@
-package com.example.androidlearning
+package com.example.androidlearning.google_codelabs
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.androidlearning.navigation.screens.compose_essentials.WellnessTaskItem
+import com.example.androidlearning.google_codelabs.navigation.screens.compose_essentials.WellnessTaskItem
 
 data class WellnessTask(val id: Int, val goal: Int, val label: String, var checked: Boolean = false)
 

@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens
+package com.example.androidlearning.google_codelabs.navigation.screens
 
 import androidx.compose.ui.unit.sp
 

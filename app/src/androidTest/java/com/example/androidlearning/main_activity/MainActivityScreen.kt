@@ -1,7 +1,7 @@
 package com.example.androidlearning.main_activity
 
 import androidx.compose.ui.test.SemanticsNodeInteractionsProvider
-import com.example.androidlearning.C
+import com.example.androidlearning.google_codelabs.C
 import io.github.kakaocup.compose.node.element.ComposeScreen
 import io.github.kakaocup.compose.node.element.KNode
 

@@ -3,7 +3,7 @@ package com.example.androidlearning.main_activity
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.androidlearning.R
-import com.example.androidlearning.activities.MainActivity
+import com.example.androidlearning.google_codelabs.activities.MainActivity
 import com.kaspersky.components.composesupport.config.withComposeSupport
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase

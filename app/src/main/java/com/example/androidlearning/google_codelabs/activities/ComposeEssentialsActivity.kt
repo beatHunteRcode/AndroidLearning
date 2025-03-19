@@ -1,4 +1,4 @@
-package com.example.androidlearning.activities
+package com.example.androidlearning.google_codelabs.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,7 +22,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.unit.sp
@@ -31,10 +30,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.androidlearning.C
-import com.example.androidlearning.navigation.BottomNavItem
-import com.example.androidlearning.navigation.screens.compose_essentials.MySootheScreen
-import com.example.androidlearning.navigation.screens.compose_essentials.WellnessScreen
+import com.example.androidlearning.google_codelabs.C
+import com.example.androidlearning.google_codelabs.navigation.BottomNavItem
+import com.example.androidlearning.google_codelabs.navigation.screens.compose_essentials.MySootheScreen
+import com.example.androidlearning.google_codelabs.navigation.screens.compose_essentials.WellnessScreen
 
 class ComposeEssentialsActivity : ComponentActivity() {
 

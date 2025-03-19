@@ -1,4 +1,4 @@
-package com.example.androidlearning
+package com.example.androidlearning.google_codelabs
 
 object C {
 

@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens.build_basic_layout
+package com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.scaleIn
@@ -8,9 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -32,9 +30,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.androidlearning.C
+import com.example.androidlearning.google_codelabs.C
 import com.example.androidlearning.R
-import com.example.androidlearning.navigation.screens.Utils
+import com.example.androidlearning.google_codelabs.navigation.screens.Utils
 import kotlinx.coroutines.delay
 import kotlin.random.Random
 

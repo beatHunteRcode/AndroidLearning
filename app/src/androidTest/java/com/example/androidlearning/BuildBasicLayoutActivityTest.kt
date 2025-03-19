@@ -6,8 +6,9 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.androidlearning.activities.BuildBasicLayoutActivity
-import com.example.androidlearning.navigation.screens.Utils
+import com.example.androidlearning.google_codelabs.activities.BuildBasicLayoutActivity
+import com.example.androidlearning.google_codelabs.C
+import com.example.androidlearning.google_codelabs.navigation.screens.Utils
 import com.kaspersky.components.composesupport.config.withComposeSupport
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase

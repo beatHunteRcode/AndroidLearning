@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens.compose_essentials
+package com.example.androidlearning.google_codelabs.navigation.screens.compose_essentials
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.scaleIn
@@ -32,9 +32,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.androidlearning.WellnessTask
-import com.example.androidlearning.WellnessTasksList
-import com.example.androidlearning.WellnessViewModel
+import com.example.androidlearning.google_codelabs.WellnessTask
+import com.example.androidlearning.google_codelabs.WellnessTasksList
+import com.example.androidlearning.google_codelabs.WellnessViewModel
 import kotlinx.coroutines.delay
 import kotlin.random.Random
 

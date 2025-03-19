@@ -1,4 +1,4 @@
-package com.example.androidlearning
+package com.example.androidlearning.google_codelabs
 
 import android.app.Application
 import com.example.androidlearning.dagger.di.AppComponentHolder

@@ -1,8 +1,7 @@
-package com.example.androidlearning.activities
+package com.example.androidlearning.google_codelabs.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
@@ -21,7 +20,7 @@ import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.androidlearning.C
+import com.example.androidlearning.google_codelabs.C
 import com.example.androidlearning.R
 
 class MainActivity : ComponentActivity() {

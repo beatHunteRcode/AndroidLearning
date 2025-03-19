@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation
+package com.example.androidlearning.google_codelabs.navigation
 
 import androidx.compose.ui.graphics.vector.ImageVector
 

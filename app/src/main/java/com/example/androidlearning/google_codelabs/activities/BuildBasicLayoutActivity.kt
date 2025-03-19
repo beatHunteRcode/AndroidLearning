@@ -1,4 +1,4 @@
-package com.example.androidlearning.activities
+package com.example.androidlearning.google_codelabs.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -33,14 +33,14 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.androidlearning.C
-import com.example.androidlearning.navigation.BottomNavItem
-import com.example.androidlearning.navigation.screens.build_basic_layout.BirthdayCardScreen
-import com.example.androidlearning.navigation.screens.build_basic_layout.BusinessCardScreen
-import com.example.androidlearning.navigation.screens.build_basic_layout.ComposeArticleScreen
-import com.example.androidlearning.navigation.screens.build_basic_layout.ComposeQuadrantScreen
-import com.example.androidlearning.navigation.screens.build_basic_layout.TaskManagerScreen
-import com.example.androidlearning.ui.theme.ComposeBasicsTheme
+import com.example.androidlearning.google_codelabs.C
+import com.example.androidlearning.google_codelabs.navigation.BottomNavItem
+import com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout.BirthdayCardScreen
+import com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout.BusinessCardScreen
+import com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout.ComposeArticleScreen
+import com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout.ComposeQuadrantScreen
+import com.example.androidlearning.google_codelabs.navigation.screens.build_basic_layout.TaskManagerScreen
+import com.example.androidlearning.google_codelabs.theme.ComposeBasicsTheme
 
 class BuildBasicLayoutActivity : ComponentActivity() {
 

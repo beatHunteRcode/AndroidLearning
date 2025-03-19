@@ -1,4 +1,4 @@
-package com.example.androidlearning.navigation.screens.compose_essentials
+package com.example.androidlearning.google_codelabs.navigation.screens.compose_essentials
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
@@ -44,7 +44,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androidlearning.R
-import com.example.androidlearning.ui.theme.MySootheTheme
+import com.example.androidlearning.google_codelabs.theme.MySootheTheme
 
 private val alignYourBodyData = listOf(
     R.drawable.ab1_inversions to R.string.ab1_inversions,
