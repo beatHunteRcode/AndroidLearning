@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name=".google_codelabs.AndroidLearningApp"
+        android:name=".AndroidLearningApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AndroidLearning"
         tools:targetApi="31">
         <activity
-            android:name=".architectures.mvi.MainActivityMVI"
+            android:name=".navigation.navigationComponent.MainActivityNavigation"
             android:exported="true"
             android:launchMode="singleTop"
             android:label="@string/app_name"
