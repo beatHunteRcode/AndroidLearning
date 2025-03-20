@@ -7,15 +7,28 @@
     <fragment
         android:id="@+id/firstFragment"
         android:name="com.example.androidlearning.navigation.navigationComponent.fragments.FirstFragment"
-        android:label="FirstFragment" >
+        android:label="FirstFragment">
         <action
             android:id="@+id/action_secondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment">
+
+            <argument
+                android:name="inputText"
+                app:argType="string"
+                app:nullable="false" />
+
+        </action>
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.androidlearning.navigation.navigationComponent.fragments.SecondFragment"
-        android:label="SecondFragment" >
+        android:label="SecondFragment">
+
+        <argument
+            android:name="inputText"
+            app:argType="string"
+            app:nullable="false" />
+
         <action
             android:id="@+id/action_firstFragment"
             app:destination="@id/firstFragment" />

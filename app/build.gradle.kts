@@ -9,6 +9,8 @@ plugins {
         alias(plugins.scabbard)
 
         alias(plugins.kotlin.serialization)
+
+        alias(plugins.androidx.navigation.safeargs.kotlin)
     }
 }
 
@@ -59,10 +61,21 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.15"
     }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
+
+    // Doesn't work due to addition classpath(libs.androidx.navigation.safeargs.gradleplugin) (wtf???)
+//    packaging {
+//        resources {
+//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+//        }
+//    }
+}
+
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        classpath(libs.androidx.navigation.safeargs.gradleplugin)
     }
 }
 
