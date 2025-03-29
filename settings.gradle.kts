@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidLearning"
 include(":app")
+include("libs:core:network")

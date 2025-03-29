@@ -14,7 +14,7 @@
         android:theme="@style/Theme.AndroidLearning"
         tools:targetApi="31">
         <activity
-            android:name=".navigation.composeNavigation.MainActivityComposeNavigation"
+            android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:label="@string/app_name"

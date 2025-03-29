@@ -49,11 +49,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     buildFeatures {
         compose = true
@@ -85,17 +85,14 @@ scabbard {
 }
 
 dependencies {
+    implementation(libs.bundles.compose)
+
     implementation(libs.android.ktx)
     implementation(platform(libs.compose.bom))
     implementation(platform(libs.kotlin.bom))
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
-    implementation(libs.ui)
     implementation(libs.ui.graphics)
-    implementation(libs.ui.tooling.preview)
-    implementation(libs.material3)
-    implementation(libs.material)
-    implementation(libs.androidx.ui)
     implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.fragment.compose)
     implementation(libs.androidx.constraintlayout)
@@ -109,8 +106,8 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    androidTestImplementation(libs.ui.test.junit4)
-    debugImplementation(libs.ui.test.manifest)
+    androidTestImplementation(libs.compose.ui.test.junit4)
+    debugImplementation(libs.compose.ui.test.manifest)
 
     //dagger
     kapt(libs.dagger.compiler)
@@ -127,4 +124,6 @@ dependencies {
 
     //json serialization
     implementation(libs.kotlinx.serialization.json)
+
+    implementation(project(":libs:core:network"))
 }
