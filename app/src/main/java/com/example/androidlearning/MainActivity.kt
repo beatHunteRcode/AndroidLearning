@@ -3,28 +3,40 @@ package com.example.androidlearning
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Text
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.androidlearning.network.ScreenFromNetworkModule
+import androidx.navigation.compose.rememberNavController
+import com.androidlearning.navigation.AppNavGraph
+import com.androidlearning.navigation.AppNavOptions
+import com.androidlearning.navigation.AppNavigator
+import com.androidlearning.navigation.Destination
+import com.androidlearning.navigation.NavigationApi
+import com.androidlearning.screens.firstscreen.navigation.FirstScreenNavigationImpl
+import com.androidlearning.screens.secondscreen.navigation.SecondScreenNavigationImpl
 
 class MainActivity : AppCompatActivity() {
+
+    private val navigationApis: List<NavigationApi> = listOf(
+        FirstScreenNavigationImpl(),
+        SecondScreenNavigationImpl()
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Column {
-                Text(
-                    modifier = Modifier.padding(40.dp),
-                    text = "Text from :app module: ABOBA",
-                    fontSize = 50.sp
-                )
-                ScreenFromNetworkModule()
-            }
+            val navController = rememberNavController()
+            val appNavigator = AppNavigator()
+
+            AppNavOptions(
+                navigationFLow = appNavigator.navigationFlow,
+                navController = navController
+            )
+
+            AppNavGraph(
+                navController = navController,
+                startDestination = Destination.FirstScreen,
+                navigationApis = navigationApis,
+                appNavigator = appNavigator
+            )
         }
     }
 

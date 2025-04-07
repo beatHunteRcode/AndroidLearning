@@ -13,7 +13,11 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/core" />
+            <option value="$PROJECT_DIR$/libs/core/arch" />
+            <option value="$PROJECT_DIR$/libs/core/navigation" />
             <option value="$PROJECT_DIR$/libs/core/network" />
+            <option value="$PROJECT_DIR$/libs/feature" />
+            <option value="$PROJECT_DIR$/libs/feature/screens" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

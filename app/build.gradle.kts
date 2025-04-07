@@ -70,15 +70,6 @@ android {
 //    }
 }
 
-buildscript {
-    repositories {
-        google()
-    }
-    dependencies {
-        classpath(libs.androidx.navigation.safeargs.gradleplugin)
-    }
-}
-
 scabbard {
     enabled = true
     outputFormat = "svg"
@@ -86,11 +77,11 @@ scabbard {
 
 dependencies {
     implementation(libs.bundles.compose)
+    implementation(libs.bundles.screen)
 
     implementation(libs.android.ktx)
     implementation(platform(libs.compose.bom))
     implementation(platform(libs.kotlin.bom))
-    implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
     implementation(libs.ui.graphics)
     implementation(libs.androidx.fragment.ktx)
@@ -125,5 +116,7 @@ dependencies {
     //json serialization
     implementation(libs.kotlinx.serialization.json)
 
-    implementation(project(":libs:core:network"))
+    implementation(project(":libs:core:navigation"))
+
+    implementation(project(":libs:feature:screens"))
 }

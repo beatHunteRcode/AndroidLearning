@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidLearning"
 include(":app")
 include("libs:core:network")
+include(":libs:core:arch")
+include(":libs:feature")
+include(":libs:feature:screens")
+include(":libs:core:navigation")

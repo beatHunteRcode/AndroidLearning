@@ -2,9 +2,9 @@
 plugins {
     with(libs) {
         alias(plugins.android.application) apply false
-        alias(plugins.android.library) apply false
-        alias(plugins.jetbrains.kotlin.android) apply false
         alias(plugins.compose.compiler) apply false
         alias(plugins.kotlin.serialization) apply false
     }
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.jetbrains.kotlin.android) apply false
 }
