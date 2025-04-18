@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kotlin_learning_title">Kotlin Learning</string>
+    <string name="android_learning_title">Android Learning</string>
+    <string name="design_patterns_title">Design Patterns</string>
+    <string name="observer_title">Observer</string>
+</resources>

@@ -1,5 +1,6 @@
 package com.androidlearning.arch
 
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.collectAsState
@@ -10,5 +11,7 @@ fun <STATE: CoreState, EVENT: CoreEvent> CoreComposeScreen(
     screen: @Composable (state: State<STATE>, onEvent: EventTrigger<EVENT>) -> Unit
 ) {
     val screenState = viewModel.state().collectAsState()
-    screen(screenState, viewModel::handleEvent)
+    MaterialTheme {
+        screen(screenState, viewModel::handleEvent)
+    }
 }

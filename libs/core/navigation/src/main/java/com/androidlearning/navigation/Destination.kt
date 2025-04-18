@@ -15,6 +15,11 @@ sealed class Destination(
 
     sealed class NoArgumentDestination(route: String) : Destination(route)
 
+    data object InitialScreen : NoArgumentDestination("initial_screen")
+    data object KotlinLearningScreen : NoArgumentDestination("kotlin_learning")
+    data object DesignPatternsScreen : NoArgumentDestination("design_patterns")
+    data object ObserverPatternScreen : NoArgumentDestination("observer_pattern")
+
     data object FirstScreen : NoArgumentDestination("first_screen")
     data object SecondScreen : NoArgumentDestination("second_screen")
 }

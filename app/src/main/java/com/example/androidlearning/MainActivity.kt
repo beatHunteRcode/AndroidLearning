@@ -10,11 +10,19 @@ import com.androidlearning.navigation.AppNavigator
 import com.androidlearning.navigation.Destination
 import com.androidlearning.navigation.NavigationApi
 import com.androidlearning.screens.firstscreen.navigation.FirstScreenNavigationImpl
+import com.androidlearning.screens.initial.navigation.InitialScreenNavigationImpl
+import com.androidlearning.screens.kotlinlearning.designpatterns.navigation.DesignPatternsNavigationImpl
+import com.androidlearning.screens.kotlinlearning.designpatterns.observer.navigation.ObserverPatternNavigationImpl
+import com.androidlearning.screens.kotlinlearning.navigation.KotlinLearningNavigationImpl
 import com.androidlearning.screens.secondscreen.navigation.SecondScreenNavigationImpl
 
 class MainActivity : AppCompatActivity() {
 
     private val navigationApis: List<NavigationApi> = listOf(
+        InitialScreenNavigationImpl(),
+        KotlinLearningNavigationImpl(),
+        DesignPatternsNavigationImpl(),
+        ObserverPatternNavigationImpl(),
         FirstScreenNavigationImpl(),
         SecondScreenNavigationImpl()
     )
@@ -33,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
             AppNavGraph(
                 navController = navController,
-                startDestination = Destination.FirstScreen,
+                startDestination = Destination.InitialScreen,
                 navigationApis = navigationApis,
                 appNavigator = appNavigator
             )

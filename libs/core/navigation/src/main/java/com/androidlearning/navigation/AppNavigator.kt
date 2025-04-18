@@ -10,8 +10,8 @@ class AppNavigator {
 
     fun navigateTo(
         route: String,
-        popUpToRoute: String?,
-        inclusive: Boolean
+        popUpToRoute: String? = null,
+        inclusive: Boolean = false
     ) {
         CoroutineScope(Dispatchers.Default).launch {
             navigationFlow.emit(NavigationIntent.NavigateTo(

@@ -1,11 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "com.androidlearning.screens"
+    namespace = "com.androidlearning.designpatterns"
     compileSdk = 35
 
     defaultConfig {
@@ -31,17 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.15"
-    }
 }
 
 dependencies {
-    implementation(libs.bundles.compose)
-    implementation(libs.bundles.navigation)
 
     implementation(libs.android.ktx)
     implementation(libs.androidx.appcompat)
@@ -49,11 +40,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    debugImplementation(libs.androidx.ui.tooling)
-
-    implementation(project(":libs:core:arch"))
-    implementation(project(":libs:core:navigation"))
-    implementation(project(":libs:sharedfeature:uikit"))
-    implementation(project(":libs:sharedfeature:screentools"))
 }
