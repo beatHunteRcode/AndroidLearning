@@ -12,7 +12,7 @@ abstract class CoreViewModel<STATE : CoreState, EVENT : CoreEvent>
 
     private val screenStateFlow = MutableStateFlow(this.createInitialScreenState())
 
-    val stateData = screenStateFlow.value
+    fun stateData() = screenStateFlow.value
 
     fun state() = screenStateFlow
 

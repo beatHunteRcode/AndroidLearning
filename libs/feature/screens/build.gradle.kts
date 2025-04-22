@@ -56,4 +56,5 @@ dependencies {
     implementation(project(":libs:core:navigation"))
     implementation(project(":libs:sharedfeature:uikit"))
     implementation(project(":libs:sharedfeature:screentools"))
+    implementation(project(":libs:feature:designpatterns"))
 }

@@ -3,6 +3,7 @@ package com.androidlearning.screens.kotlinlearning.designpatterns
 import com.androidlearning.arch.CoreViewModel
 import com.androidlearning.arch.EmptyScreenState
 import com.androidlearning.navigation.AppNavigator
+import com.androidlearning.navigation.Destination
 
 class DesignPatternsScreenViewModel(
     private val appNavigator: AppNavigator
@@ -12,7 +13,7 @@ class DesignPatternsScreenViewModel(
     override fun handleEvent(screenEvent: DesignPatternsScreenEvents) {
         when (screenEvent) {
             DesignPatternsScreenEvents.ObserverButtonClicked -> {
-                TODO()
+                appNavigator.navigateTo(route = Destination.ObserverPatternScreen.fullRoute)
             }
         }
     }

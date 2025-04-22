@@ -4,4 +4,12 @@
     <string name="android_learning_title">Android Learning</string>
     <string name="design_patterns_title">Design Patterns</string>
     <string name="observer_title">Observer</string>
+    <string name="observers_title">Observers</string>
+    <string name="add_observer_title">Add Observer</string>
+    <string name="observer_name_title">Observer name</string>
+    <string name="event_managers_title">Event managers</string>
+    <string name="add_event_manager_title">Add Event manager</string>
+    <string name="event_manager_name_title">Event manager name</string>
+    <string name="send_title">Send</string>
+    <string name="add_title">Add</string>
 </resources>
