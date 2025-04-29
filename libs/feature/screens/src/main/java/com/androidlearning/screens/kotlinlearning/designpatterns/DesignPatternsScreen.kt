@@ -36,5 +36,13 @@ private fun Screen(
         ) {
             Text(text = stringResource(R.string.observer_title))
         }
+
+        Button(
+            onClick = {
+                onEvent(DesignPatternsScreenEvents.FactoryMethodButtonClicked)
+            }
+        ) {
+            Text(text = stringResource(R.string.factory_method_title))
+        }
     }
 }
