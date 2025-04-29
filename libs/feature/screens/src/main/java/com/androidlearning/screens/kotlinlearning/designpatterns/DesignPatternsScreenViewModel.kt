@@ -19,6 +19,10 @@ class DesignPatternsScreenViewModel(
             DesignPatternsScreenEvents.FactoryMethodButtonClicked -> {
                 appNavigator.navigateTo(route = Destination.FactoryMethodPatternScreen.fullRoute)
             }
+
+            DesignPatternsScreenEvents.AbstractFactoryButtonClicked -> {
+                appNavigator.navigateTo(route = Destination.AbstractFactoryPatternScreen.fullRoute)
+            }
         }
     }
 }

@@ -13,6 +13,16 @@
     <string name="factory_method_title">Factory Method</string>
     <string name="open_dialog_with_circle_button_title">Open dialog with Circle Button</string>
     <string name="open_dialog_with_rectangle_button_title">Open dialog with Rectangle Button</string>
+    <string name="abstract_factory_title">Abstract Factory</string>
+    <string name="open_greendialog_title">Open GreenDialog</string>
+    <string name="open_cyandialog_title">Open CyanDialog</string>
+    <string name="open_purpledialog_title">Open PurpleDialog</string>
+    <string name="this_is_greendialog_button_title">This is GreenDialog Button</string>
+    <string name="this_is_cyandialog_button_title">This is CyanDialog Button</string>
+    <string name="this_is_purpledialog_button_title">This is PurpleDialog Button</string>
+    <string name="this_is_greendialog_text_title">This is GreenDialog Text</string>
+    <string name="this_is_cyandialog_text_title">This is CyanDialog Text</string>
+    <string name="this_is_purpledialog_text_title">This is PurpleDialog Text</string>
     <string name="send_title">Send</string>
     <string name="add_title">Add</string>
     <string name="ok_title">Ok</string>
