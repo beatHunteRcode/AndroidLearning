@@ -26,6 +26,9 @@ import com.androidlearning.uikit.ScreenLayoutSize
 import com.androidlearning.uikit.TextSize
 import com.androidlearning.uikit.fillMaxWidthWithEdgeOffset
 
+/**
+ * Reference - [Наблюдатель. RefactoringGuru.](https://refactoringguru.cn/ru/design-patterns/observer)
+ */
 @Composable
 internal fun ObserverPatternScreen(viewModel: ObserverPatternScreenViewModel) {
     CoreComposeScreen(viewModel = viewModel) { state, onEvent ->
