@@ -16,6 +16,7 @@ import com.androidlearning.screens.kotlinlearning.designpatterns.adapter.navigat
 import com.androidlearning.screens.kotlinlearning.designpatterns.factorymethod.navigation.FactoryMethodPatternNavigationImpl
 import com.androidlearning.screens.kotlinlearning.designpatterns.navigation.DesignPatternsNavigationImpl
 import com.androidlearning.screens.kotlinlearning.designpatterns.observer.navigation.ObserverPatternNavigationImpl
+import com.androidlearning.screens.kotlinlearning.designpatterns.state.navigation.StatePatternNavigationImpl
 import com.androidlearning.screens.kotlinlearning.navigation.KotlinLearningNavigationImpl
 import com.androidlearning.screens.secondscreen.navigation.SecondScreenNavigationImpl
 
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         FactoryMethodPatternNavigationImpl(),
         AbstractFactoryNavigationImpl(),
         AdapterPatternNavigationImpl(),
+        StatePatternNavigationImpl(),
         FirstScreenNavigationImpl(),
         SecondScreenNavigationImpl()
     )

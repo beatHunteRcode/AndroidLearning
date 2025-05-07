@@ -60,5 +60,13 @@ private fun Screen(
         ) {
             Text(text = stringResource(R.string.adapter_title))
         }
+
+        Button(
+            onClick = {
+                onEvent(DesignPatternsScreenEvents.StateButtonClicked)
+            }
+        ) {
+            Text(text = stringResource(R.string.state_title))
+        }
     }
 }

@@ -7,4 +7,5 @@ sealed class DesignPatternsScreenEvents : CoreEvent {
     data object FactoryMethodButtonClicked : DesignPatternsScreenEvents()
     data object AbstractFactoryButtonClicked : DesignPatternsScreenEvents()
     data object AdapterButtonClicked : DesignPatternsScreenEvents()
+    data object StateButtonClicked : DesignPatternsScreenEvents()
 }

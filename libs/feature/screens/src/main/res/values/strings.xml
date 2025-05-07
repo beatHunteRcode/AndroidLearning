@@ -32,4 +32,5 @@
     <string name="render_compose_item_from_composeItemAdapter_title">Render Compose Item from ComposeItemAdapter</string>
     <string name="this_is_compose_item_from_composeItemAdapter_title">This is Compose Item from ComposeItemAdapter</string>
     <string name="clear_title">Clear</string>
+    <string name="state_title">State</string>
 </resources>
