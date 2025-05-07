@@ -26,4 +26,10 @@
     <string name="send_title">Send</string>
     <string name="add_title">Add</string>
     <string name="ok_title">Ok</string>
+    <string name="adapter_title">Adapter</string>
+    <string name="render_compose_item_title">Render Compose Item</string>
+    <string name="this_is_compose_item_title">This is Compose Item</string>
+    <string name="render_compose_item_from_composeItemAdapter_title">Render Compose Item from ComposeItemAdapter</string>
+    <string name="this_is_compose_item_from_composeItemAdapter_title">This is Compose Item from ComposeItemAdapter</string>
+    <string name="clear_title">Clear</string>
 </resources>

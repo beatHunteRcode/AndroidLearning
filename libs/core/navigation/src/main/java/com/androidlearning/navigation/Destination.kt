@@ -21,6 +21,7 @@ sealed class Destination(
     data object ObserverPatternScreen : NoArgumentDestination("observer_pattern")
     data object FactoryMethodPatternScreen : NoArgumentDestination("factorymethod_pattern")
     data object AbstractFactoryPatternScreen : NoArgumentDestination("abstractfactory_pattern")
+    data object AdapterPatternScreen : NoArgumentDestination("adapter_pattern")
 
     data object FirstScreen : NoArgumentDestination("first_screen")
     data object SecondScreen : NoArgumentDestination("second_screen")
