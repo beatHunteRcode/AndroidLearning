@@ -36,5 +36,12 @@ private fun Screen(
         ) {
             Text(text = stringResource(R.string.design_patterns_title))
         }
+        Button(
+            onClick = {
+                onEvent(KotlinLearningScreenEvents.CoroutinesButtonClicked)
+            }
+        ) {
+            Text(text = stringResource(R.string.coroutines_title))
+        }
     }
 }

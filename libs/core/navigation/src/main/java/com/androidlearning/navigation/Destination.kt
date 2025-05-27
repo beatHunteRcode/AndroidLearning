@@ -23,6 +23,7 @@ sealed class Destination(
     data object AbstractFactoryPatternScreen : NoArgumentDestination("abstractfactory_pattern")
     data object AdapterPatternScreen : NoArgumentDestination("adapter_pattern")
     data object StatePatternScreen : NoArgumentDestination("state_pattern")
+    data object CoroutinesScreen : NoArgumentDestination("coroutines")
 
     data object FirstScreen : NoArgumentDestination("first_screen")
     data object SecondScreen : NoArgumentDestination("second_screen")

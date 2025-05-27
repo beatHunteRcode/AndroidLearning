@@ -15,6 +15,10 @@ class KotlinLearningScreenViewModel(
             KotlinLearningScreenEvents.DesignPatternsButtonClicked -> {
                 appNavigator.navigateTo(route = Destination.DesignPatternsScreen.fullRoute)
             }
+
+            KotlinLearningScreenEvents.CoroutinesButtonClicked -> {
+                appNavigator.navigateTo(route = Destination.CoroutinesScreen.fullRoute)
+            }
         }
     }
 }
