@@ -119,4 +119,5 @@ dependencies {
     implementation(project(":libs:core:navigation"))
 
     implementation(project(":libs:feature:screens"))
+    implementation(project(":libs:feature:jetpackcomposeessentials"))
 }

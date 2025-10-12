@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/libs/core/network" />
             <option value="$PROJECT_DIR$/libs/feature" />
             <option value="$PROJECT_DIR$/libs/feature/designpatterns" />
+            <option value="$PROJECT_DIR$/libs/feature/jetpackcomposeessentials" />
             <option value="$PROJECT_DIR$/libs/feature/screens" />
             <option value="$PROJECT_DIR$/libs/sharedfeature" />
             <option value="$PROJECT_DIR$/libs/sharedfeature/screentools" />

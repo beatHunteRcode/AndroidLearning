@@ -16,6 +16,7 @@ sealed class Destination(
     sealed class NoArgumentDestination(route: String) : Destination(route)
 
     data object InitialScreen : NoArgumentDestination("initial_screen")
+
     data object KotlinLearningScreen : NoArgumentDestination("kotlin_learning")
     data object DesignPatternsScreen : NoArgumentDestination("design_patterns")
     data object ObserverPatternScreen : NoArgumentDestination("observer_pattern")
@@ -24,6 +25,9 @@ sealed class Destination(
     data object AdapterPatternScreen : NoArgumentDestination("adapter_pattern")
     data object StatePatternScreen : NoArgumentDestination("state_pattern")
     data object CoroutinesScreen : NoArgumentDestination("coroutines")
+
+    data object AndroidLearningScreen : NoArgumentDestination("android_learning")
+    data object JCEInitialScreen: NoArgumentDestination("JCE_initial")
 
     data object FirstScreen : NoArgumentDestination("first_screen")
     data object SecondScreen : NoArgumentDestination("second_screen")

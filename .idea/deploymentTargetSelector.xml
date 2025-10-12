@@ -14,10 +14,10 @@
       <SelectionState runConfigName="MainActivityMVC (4)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="MainActivityMVC">
+      <SelectionState runConfigName="InitialScreenPreview">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="InitialScreenPreview">
+      <SelectionState runConfigName="DemoTextPreview">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

@@ -19,7 +19,9 @@ class InitialScreenViewModel(
                 )
             }
             InitialScreenEvents.AndroidLearningButtonClicked -> {
-                TODO()
+                appNavigator.navigateTo(
+                    route = Destination.AndroidLearningScreen.fullRoute
+                )
             }
         }
     }
