@@ -12,6 +12,7 @@ import androidx.compose.ui.res.stringResource
 import com.androidlearning.arch.CoreComposeScreen
 import com.androidlearning.arch.EventTrigger
 import com.androidlearning.jetpackcomposeessentials.R
+import com.androidlearning.uikit.fillMaxWidthWithEdgeOffset
 
 @Composable
 internal fun JCEInitialScreen(viewModel: JCEInitialScreenViewModel) {
@@ -23,23 +24,18 @@ internal fun JCEInitialScreen(viewModel: JCEInitialScreenViewModel) {
 @Composable
 private fun Screen(onEvent: EventTrigger<JCEInitialScreenEvents>) {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize().fillMaxWidthWithEdgeOffset(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
-        Button(
-            onClick = {
-                onEvent(JCEInitialScreenEvents.JCEChapter4ButtonClicked)
-            }
-        ) {
+        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter4ButtonClicked) }) {
             Text(text = stringResource(R.string.jce_chapter_4_title))
         }
-        Button(
-            onClick = {
-                onEvent(JCEInitialScreenEvents.JCEChapter20ButtonClicked)
-            }
-        ) {
+        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter20ButtonClicked) }) {
             Text(text = stringResource(R.string.jce_chapter_20_title))
+        }
+        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter21ButtonClicked) }) {
+            Text(text = stringResource(R.string.jce_chapter_21_title))
         }
     }
 }

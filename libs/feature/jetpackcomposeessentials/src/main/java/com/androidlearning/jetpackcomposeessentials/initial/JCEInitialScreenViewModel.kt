@@ -24,6 +24,12 @@ internal class JCEInitialScreenViewModel(
                     route = Destination.JCEChapter20Screen.fullRoute
                 )
             }
+
+            JCEInitialScreenEvents.JCEChapter21ButtonClicked -> {
+                appNavigator.navigateTo(
+                    route = Destination.JCEChapter21Screen.fullRoute
+                )
+            }
         }
     }
 
