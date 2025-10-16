@@ -2,13 +2,23 @@ package com.androidlearning.jetpackcomposeessentials.initial
 
 import com.androidlearning.arch.CoreViewModel
 import com.androidlearning.arch.EmptyScreenState
+import com.androidlearning.navigation.AppNavigator
+import com.androidlearning.navigation.Destination
 
-internal class JCEInitialScreenViewModel : CoreViewModel<EmptyScreenState, JCEInitialScreenEvents>() {
+internal class JCEInitialScreenViewModel(
+    private val appNavigator: AppNavigator
+) : CoreViewModel<EmptyScreenState, JCEInitialScreenEvents>() {
 
     override fun createInitialScreenState(): EmptyScreenState = EmptyScreenState()
 
     override fun handleEvent(screenEvent: JCEInitialScreenEvents) {
-        TODO("Not yet implemented")
+        when (screenEvent) {
+            JCEInitialScreenEvents.JCEChapter4ButtonClicked -> {
+                appNavigator.navigateTo(
+                    route = Destination.JCEChapter4Screen.fullRoute
+                )
+            }
+        }
     }
 
 }

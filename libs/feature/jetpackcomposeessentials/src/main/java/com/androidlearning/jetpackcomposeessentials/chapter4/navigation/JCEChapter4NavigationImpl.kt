@@ -1,16 +1,15 @@
-package com.androidlearning.jetpackcomposeessentials.initial.navigation
+package com.androidlearning.jetpackcomposeessentials.chapter4.navigation
 
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
-import com.androidlearning.jetpackcomposeessentials.initial.JCEInitialScreen
-import com.androidlearning.jetpackcomposeessentials.initial.JCEInitialScreenViewModel
+import com.androidlearning.jetpackcomposeessentials.chapter4.JCEChapter4Screen
 import com.androidlearning.navigation.AppNavigator
 import com.androidlearning.navigation.Destination
 import com.androidlearning.navigation.NavigationApi
 import com.androidlearning.navigation.composable
 
-class JCEInitialNavigationImpl : NavigationApi {
+class JCEChapter4NavigationImpl : NavigationApi {
     override fun registerGraph(
         modifier: Modifier,
         navGraphBuilder: NavGraphBuilder,
@@ -18,14 +17,9 @@ class JCEInitialNavigationImpl : NavigationApi {
         appNavigator: AppNavigator
     ) {
         navGraphBuilder.composable(
-            destination = Destination.JCEInitialScreen
+            destination = Destination.JCEChapter4Screen
         ) {
-            JCEInitialScreen(
-                viewModel = JCEInitialScreenViewModel(
-                    appNavigator = appNavigator
-                )
-            )
+            JCEChapter4Screen()
         }
     }
-
 }

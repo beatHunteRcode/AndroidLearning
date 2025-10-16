@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.compose.rememberNavController
+import com.androidlearning.jetpackcomposeessentials.chapter4.navigation.JCEChapter4NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.initial.navigation.JCEInitialNavigationImpl
 import com.androidlearning.navigation.AppNavGraph
 import com.androidlearning.navigation.AppNavOptions
@@ -38,7 +39,8 @@ class MainActivity : AppCompatActivity() {
         CoroutinesNavigationImpl(),
         FirstScreenNavigationImpl(),
         SecondScreenNavigationImpl(),
-        JCEInitialNavigationImpl()
+        JCEInitialNavigationImpl(),
+        JCEChapter4NavigationImpl()
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
