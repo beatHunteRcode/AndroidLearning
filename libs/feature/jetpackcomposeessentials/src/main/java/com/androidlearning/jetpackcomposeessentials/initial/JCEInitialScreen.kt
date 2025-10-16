@@ -34,5 +34,12 @@ private fun Screen(onEvent: EventTrigger<JCEInitialScreenEvents>) {
         ) {
             Text(text = stringResource(R.string.jce_chapter_4_title))
         }
+        Button(
+            onClick = {
+                onEvent(JCEInitialScreenEvents.JCEChapter20ButtonClicked)
+            }
+        ) {
+            Text(text = stringResource(R.string.jce_chapter_20_title))
+        }
     }
 }

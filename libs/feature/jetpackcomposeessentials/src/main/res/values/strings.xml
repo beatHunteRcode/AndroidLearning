@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="jce_chapter_4_title">Chapter 4: An Example Compose Project</string>
+    <string name="jce_chapter_4_title">Chapter 4. An Example Compose Project</string>
+    <string name="jce_chapter_20_title">Chapter 20. Composable Functions Overview</string>
 </resources>
