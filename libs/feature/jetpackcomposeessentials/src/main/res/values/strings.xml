@@ -3,4 +3,5 @@
     <string name="jce_chapter_4_title">Chapter 4. An Example Compose Project</string>
     <string name="jce_chapter_20_title">Chapter 20. Composable Functions Overview</string>
     <string name="jce_chapter_21_title">Chapter 21. An Overview of Compose State and Recomposition</string>
+    <string name="jce_chapter_22_title">Chapter 22. An Introduction to Composition Local</string>
 </resources>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.compose.rememberNavController
 import com.androidlearning.jetpackcomposeessentials.chapter20.navigation.JCEChapter20NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.chapter21.navigation.JCEChapter21NavigationImpl
+import com.androidlearning.jetpackcomposeessentials.chapter22.navigation.JCEChapter22NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.chapter4.navigation.JCEChapter4NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.initial.navigation.JCEInitialNavigationImpl
 import com.androidlearning.navigation.AppNavGraph
@@ -44,7 +45,8 @@ class MainActivity : AppCompatActivity() {
         JCEInitialNavigationImpl(),
         JCEChapter4NavigationImpl(),
         JCEChapter20NavigationImpl(),
-        JCEChapter21NavigationImpl()
+        JCEChapter21NavigationImpl(),
+        JCEChapter22NavigationImpl()
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
