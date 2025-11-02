@@ -13,30 +13,22 @@ internal class JCEInitialScreenViewModel(
 
     override fun handleEvent(screenEvent: JCEInitialScreenEvents) {
         when (screenEvent) {
-            JCEInitialScreenEvents.JCEChapter4ButtonClicked -> {
-                appNavigator.navigateTo(
-                    route = Destination.JCEChapter4Screen.fullRoute
-                )
-            }
-
-            JCEInitialScreenEvents.JCEChapter20ButtonClicked -> {
-                appNavigator.navigateTo(
-                    route = Destination.JCEChapter20Screen.fullRoute
-                )
-            }
-
-            JCEInitialScreenEvents.JCEChapter21ButtonClicked -> {
-                appNavigator.navigateTo(
-                    route = Destination.JCEChapter21Screen.fullRoute
-                )
-            }
-
-            JCEInitialScreenEvents.JCEChapter22ButtonClicked -> {
-                appNavigator.navigateTo(
-                    route = Destination.JCEChapter22Screen.fullRoute
-                )
+            is JCEInitialScreenEvents.JCEChapterButtonClicked -> {
+                navigateToChapterScreen(screenEvent.chapter)
             }
         }
+    }
+
+    private fun navigateToChapterScreen(chapter: JCEChapter) {
+        appNavigator.navigateTo(
+            route = when (chapter) {
+                JCEChapter.CHAPTER_4 -> Destination.JCEChapter4Screen.fullRoute
+                JCEChapter.CHAPTER_20 -> Destination.JCEChapter20Screen.fullRoute
+                JCEChapter.CHAPTER_21 -> Destination.JCEChapter21Screen.fullRoute
+                JCEChapter.CHAPTER_22 -> Destination.JCEChapter22Screen.fullRoute
+                JCEChapter.CHAPTER_35 -> Destination.JCEChapter35Screen.fullRoute
+            }
+        )
     }
 
 }

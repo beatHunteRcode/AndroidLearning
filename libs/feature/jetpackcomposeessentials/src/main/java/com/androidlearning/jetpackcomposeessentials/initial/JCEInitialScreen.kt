@@ -1,8 +1,8 @@
 package com.androidlearning.jetpackcomposeessentials.initial
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -11,7 +11,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.androidlearning.arch.CoreComposeScreen
 import com.androidlearning.arch.EventTrigger
-import com.androidlearning.jetpackcomposeessentials.R
 import com.androidlearning.uikit.fillMaxWidthWithEdgeOffset
 
 @Composable
@@ -23,22 +22,19 @@ internal fun JCEInitialScreen(viewModel: JCEInitialScreenViewModel) {
 
 @Composable
 private fun Screen(onEvent: EventTrigger<JCEInitialScreenEvents>) {
-    Column(
-        modifier = Modifier.fillMaxSize().fillMaxWidthWithEdgeOffset(),
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .fillMaxWidthWithEdgeOffset(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
     ) {
-        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter4ButtonClicked) }) {
-            Text(text = stringResource(R.string.jce_chapter_4_title))
-        }
-        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter20ButtonClicked) }) {
-            Text(text = stringResource(R.string.jce_chapter_20_title))
-        }
-        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter21ButtonClicked) }) {
-            Text(text = stringResource(R.string.jce_chapter_21_title))
-        }
-        Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapter22ButtonClicked) }) {
-            Text(text = stringResource(R.string.jce_chapter_22_title))
+        JCEChapter.entries.forEach { chapter ->
+            item {
+                Button(onClick = { onEvent(JCEInitialScreenEvents.JCEChapterButtonClicked(chapter)) }) {
+                    Text(text = stringResource(chapter.chapterTitleResId))
+                }
+            }
         }
     }
 }
