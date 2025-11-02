@@ -8,6 +8,7 @@ import com.androidlearning.jetpackcomposeessentials.chapter20.navigation.JCEChap
 import com.androidlearning.jetpackcomposeessentials.chapter21.navigation.JCEChapter21NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.chapter22.navigation.JCEChapter22NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.chapter35.navigation.JCEChapter35NavigationImpl
+import com.androidlearning.jetpackcomposeessentials.chapter36.navigation.JCEChapter36NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.chapter4.navigation.JCEChapter4NavigationImpl
 import com.androidlearning.jetpackcomposeessentials.initial.navigation.JCEInitialNavigationImpl
 import com.androidlearning.navigation.AppNavGraph
@@ -48,7 +49,8 @@ class MainActivity : AppCompatActivity() {
         JCEChapter20NavigationImpl(),
         JCEChapter21NavigationImpl(),
         JCEChapter22NavigationImpl(),
-        JCEChapter35NavigationImpl()
+        JCEChapter35NavigationImpl(),
+        JCEChapter36NavigationImpl()
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
