@@ -6,4 +6,5 @@
     <string name="jce_chapter_22_title">Chapter 22. An Introduction to Composition Local</string>
     <string name="jce_chapter_35_title">Chapter 35. Working with IntrinsicSize in Compose</string>
     <string name="jce_chapter_36_title">Chapter 36. Coroutines and LaunchedEffects in Jetpack Compose</string>
+    <string name="jce_chapter_42_title">Chapter 42. VerticalPager and HorizontalPager in Compose</string>
 </resources>

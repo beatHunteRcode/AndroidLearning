@@ -9,5 +9,7 @@ object ScreenLayoutSize {
     val dp10 = 10.dp
     val dp16 = 16.dp
     val dp48 = 48.dp
+    val dp75 = 75.dp
+    val dp100 = 100.dp
     val dp200 = 200.dp
 }
