@@ -29,6 +29,7 @@ internal class JCEInitialScreenViewModel(
                 JCEChapter.CHAPTER_35 -> Destination.JCEChapter35Screen.fullRoute
                 JCEChapter.CHAPTER_36 -> Destination.JCEChapter36Screen.fullRoute
                 JCEChapter.CHAPTER_42 -> Destination.JCEChapter42Screen.fullRoute
+                JCEChapter.CHAPTER_43 -> Destination.JCEChapter43Screen.fullRoute
             }
         )
     }

@@ -35,6 +35,7 @@ sealed class Destination(
     data object JCEChapter35Screen: NoArgumentDestination("JCE_chapter_35")
     data object JCEChapter36Screen: NoArgumentDestination("JCE_chapter_36")
     data object JCEChapter42Screen: NoArgumentDestination("JCE_chapter_42")
+    data object JCEChapter43Screen: NoArgumentDestination("JCE_chapter_43")
 
     data object FirstScreen : NoArgumentDestination("first_screen")
     data object SecondScreen : NoArgumentDestination("second_screen")

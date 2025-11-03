@@ -9,5 +9,6 @@ internal enum class JCEChapter(val chapterTitleResId: Int) {
     CHAPTER_22(R.string.jce_chapter_22_title),
     CHAPTER_35(R.string.jce_chapter_35_title),
     CHAPTER_36(R.string.jce_chapter_36_title),
-    CHAPTER_42(R.string.jce_chapter_42_title)
+    CHAPTER_42(R.string.jce_chapter_42_title),
+    CHAPTER_43(R.string.jce_chapter_43_title)
 }

@@ -7,4 +7,5 @@
     <string name="jce_chapter_35_title">Chapter 35. Working with IntrinsicSize in Compose</string>
     <string name="jce_chapter_36_title">Chapter 36. Coroutines and LaunchedEffects in Jetpack Compose</string>
     <string name="jce_chapter_42_title">Chapter 42. VerticalPager and HorizontalPager in Compose</string>
+    <string name="jce_chapter_43_title">Chapter 43. Compose Visibility Animation</string>
 </resources>
