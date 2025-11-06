@@ -22,7 +22,8 @@ import kotlinx.coroutines.launch
  *
  * - Model: Represents the data and business logic of the application, typically does not have any direct knowledge of the user interface. Represented by [GameRepository] handling logic and data.
  * - View: This layer represents the user interface elements. It focuses on displaying data and handling user interactions without any logic or knowledge about the data itself. The UI elements represented by Composable functions in [GameScreen].
- * - ViewModel: Acts as a bridge between the View and the Model. It exposes data to the View through a StateFlow mechanism represented by [GameViewModel.stateFlow]. It also manages the lifecycle of the data and ensures the View only receives relevant updates.
+ * - ViewModel: Acts as a bridge between the View and the Model. It exposes data to the View through a StateFlow mechanism represented by [MutableState] properties like [GameViewModel.isLoading], [GameViewModel.games] and [GameViewModel.errorText].
+ * It also manages the lifecycle of the data and ensures the View only receives relevant updates.
  */
 class MainActivityMVVM : ComponentActivity() {
 
@@ -41,7 +42,9 @@ class MainActivityMVVM : ComponentActivity() {
                 color = MaterialTheme.colors.background
             ) {
                 GameScreen(
-                    viewModel = viewModel,
+                    isLoading = viewModel.isLoading,
+                    games = viewModel.games,
+                    errorText = viewModel.errorText,
                     onCardClicked = { cardIndex ->
                         viewModel.cardClicked(cardIndex)
                     }
