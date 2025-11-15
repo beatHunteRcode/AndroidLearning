@@ -19,6 +19,7 @@ import com.androidlearning.navigation.AppNavigator
 import com.androidlearning.navigation.Destination
 import com.androidlearning.navigation.NavigationApi
 import com.androidlearning.screens.androidlearning.navigation.AndroidLearningNavigationImpl
+import com.androidlearning.screens.androidlearning.screens.anrexample.navigation.ANRExampleNavigationImpl
 import com.androidlearning.screens.firstscreen.navigation.FirstScreenNavigationImpl
 import com.androidlearning.screens.initial.navigation.InitialScreenNavigationImpl
 import com.androidlearning.screens.kotlinlearning.coroutines.navigation.CoroutinesNavigationImpl
@@ -54,7 +55,8 @@ class MainActivity : AppCompatActivity() {
         JCEChapter35NavigationImpl(),
         JCEChapter36NavigationImpl(),
         JCEChapter42NavigationImpl(),
-        JCEChapter43NavigationImpl()
+        JCEChapter43NavigationImpl(),
+        ANRExampleNavigationImpl()
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

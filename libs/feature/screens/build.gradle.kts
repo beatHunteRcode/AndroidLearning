@@ -30,6 +30,18 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+
+        // для генерации отчетов по профилированию Compose
+        freeCompilerArgs += listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination=" +
+                    "${layout.buildDirectory.get().asFile.absolutePath}/compose_compiler_reports"
+        )
+        freeCompilerArgs += listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=" +
+                    "${layout.buildDirectory.get().asFile.absolutePath}/compose_compiler_metrics"
+        )
     }
     buildFeatures {
         compose = true

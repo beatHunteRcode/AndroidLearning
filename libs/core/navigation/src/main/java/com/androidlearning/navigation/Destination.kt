@@ -27,6 +27,7 @@ sealed class Destination(
     data object CoroutinesScreen : NoArgumentDestination("coroutines")
 
     data object AndroidLearningScreen : NoArgumentDestination("android_learning")
+    data object ANRExampleScreen : NoArgumentDestination("anr_example")
     data object JCEInitialScreen: NoArgumentDestination("JCE_initial")
     data object JCEChapter4Screen: NoArgumentDestination("JCE_chapter_4")
     data object JCEChapter20Screen: NoArgumentDestination("JCE_chapter_20")

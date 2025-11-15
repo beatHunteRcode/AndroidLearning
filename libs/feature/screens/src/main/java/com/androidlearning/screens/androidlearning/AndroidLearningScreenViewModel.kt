@@ -15,6 +15,10 @@ class AndroidLearningScreenViewModel(
             AndroidLearningScreenEvents.JetpackComposeEssentialsButtonClicked -> {
                 appNavigator.navigateTo(Destination.JCEInitialScreen.fullRoute)
             }
+
+            AndroidLearningScreenEvents.ANRExampleButtonClicked -> {
+                appNavigator.navigateTo(Destination.ANRExampleScreen.fullRoute)
+            }
         }
     }
 }

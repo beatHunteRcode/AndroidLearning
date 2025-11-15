@@ -36,5 +36,12 @@ private fun Screen(
         ) {
             Text(text = stringResource(R.string.jetpack_compose_essentials_title))
         }
+        Button(
+            onClick = {
+                onEvent(AndroidLearningScreenEvents.ANRExampleButtonClicked)
+            }
+        ) {
+            Text(text = stringResource(R.string.anr_example_title))
+        }
     }
 }

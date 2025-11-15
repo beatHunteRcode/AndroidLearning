@@ -3,6 +3,7 @@
     <string name="kotlin_learning_title">Kotlin Learning</string>
     <string name="android_learning_title">Android Learning</string>
     <string name="jetpack_compose_essentials_title">Jetpack Compose Essentials 1.6 (Book)</string>
+    <string name="anr_example_title">ANR Example</string>
     <string name="design_patterns_title">Design Patterns</string>
     <string name="observer_title">Observer</string>
     <string name="observers_title">Observers</string>
