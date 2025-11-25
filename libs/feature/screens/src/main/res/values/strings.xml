@@ -35,6 +35,7 @@
     <string name="this_is_compose_item_from_composeItemAdapter_title">This is Compose Item from ComposeItemAdapter</string>
     <string name="clear_title">Clear</string>
     <string name="state_title">State</string>
+    <string name="builder_title">Builder</string>
     <string name="coroutines_title">Coroutines</string>
     <string name="run_threads_title">Run Threads</string>
     <string name="run_coroutines_title">Run Coroutines</string>

@@ -8,4 +8,5 @@ sealed class DesignPatternsScreenEvents : CoreEvent {
     data object AbstractFactoryButtonClicked : DesignPatternsScreenEvents()
     data object AdapterButtonClicked : DesignPatternsScreenEvents()
     data object StateButtonClicked : DesignPatternsScreenEvents()
+    data object BuilderButtonClicked : DesignPatternsScreenEvents()
 }

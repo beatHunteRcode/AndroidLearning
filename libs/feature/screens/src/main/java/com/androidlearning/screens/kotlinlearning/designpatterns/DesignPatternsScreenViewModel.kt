@@ -31,6 +31,10 @@ class DesignPatternsScreenViewModel(
             DesignPatternsScreenEvents.StateButtonClicked -> {
                 appNavigator.navigateTo(route = Destination.StatePatternScreen.fullRoute)
             }
+
+            DesignPatternsScreenEvents.BuilderButtonClicked -> {
+                appNavigator.navigateTo(route = Destination.BuilderPatternScreen.fullRoute)
+            }
         }
     }
 }
